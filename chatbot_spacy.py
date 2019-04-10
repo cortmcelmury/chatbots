@@ -14,9 +14,10 @@ atis_intents.head()
 
 # Hotels data
 # db file with only one table - 'hotels'
+# Donwload to your machine and point the connect string to the location
 import sqlite3
 conn = sqlite3.connect(
-    'C:\\Users\cmcelmury\Documents\Python\Datasets\hotels.db')
+    'https://github.com/cortmcelmury/chatbots/blob/master/data/hotels.db')
 c = conn.cursor()
 
 c.execute("SELECT * FROM hotels")
@@ -309,7 +310,7 @@ import sqlite3
 
 # Open connection to DB
 conn = sqlite3.connect(
-    'C:\\Users\cmcelmury\Documents\Python\Datasets\hotels.db')
+    'https://github.com/cortmcelmury/chatbots/blob/master/data/hotels.db')
 # Create a cursor
 c = conn.cursor()
 
@@ -346,7 +347,7 @@ def find_hotels(params):
 
     # Open connection to DB
     conn = sqlite3.connect(
-        'C:\\Users\cmcelmury\Documents\Python\Datasets\hotels.db')
+        'https://github.com/cortmcelmury/chatbots/blob/master/data/hotels.db')
     # Create a cursor
     c = conn.cursor()
     # Execute the query
@@ -555,7 +556,7 @@ def find_hotels(params, neg_params):
 
     # open connection to DB
     conn = sqlite3.connect(
-        'C:\\Users\cmcelmury\Documents\Python\Datasets\hotels.db')
+        'https://github.com/cortmcelmury/chatbots/blob/master/data/hotels.db')
     # create a cursor
     c = conn.cursor()
     c.execute(query, t)
